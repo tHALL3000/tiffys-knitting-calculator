@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Tiffy's Knitting Calculator</title>
+
+</head>
+<body>
+    <main class="page">
+        
+        <header class="header">
+            <img class="logo" src="./images/yarn-heart-removebg-preview.png" alt="A heart shaped ball of yearn with two knitting needles in it forming an X.">
+            <h1 class="header-title">Tiffy's Knitting Calculator</h1>
+        </header>
+        <section class= "siblings">
+            <div><img class="cube" id= "cubey" src="/images/n955187.jpg" alt="I'm a baaad sheep."></div>
+            <form class="form" id="moveform">
+            <h2 class="form__title">
+                How many stitches should I be knitting?
+            </h2>
+
+            <fieldset class="form__gauge onsubmit="return divideBy()" method="post"">
+                The pattern I am knitting calls for <input type="number" class="inputs" id="pattern-gauge-stitiches" name="pattern-gauge-stitiches" value= "0"> stitches over 4 inches.<br>I am knitting at <input type="number" class="inputs" id="my-gauge-stitiches" name="my-gauge-stitiches" value="0"> stiches over my 4 inch swatch.<br>
+                
+                <!--JS for peekaboo-->
+                <input id='matter' type="submit" class="submit animateSlow" onmouseenter="peek('cubey')" onmouseleave="peek('cubey')"
+                value="How much will it matter?" onsubmit="calculate()"><br>
+
+                <script src="script.js"></script>
+
+                <p><b>Your sizing will change 
+                    <span id="result"></span>
+                    inches in the garment.</b>
+            </fieldset>
+            <fieldset class="form__gauge">
+                When the line in the pattern calls for <input type="number" class="inputs" id="pattern-line-stitiches" name="pattern-line-stitiches" value="0"> stiches,<br>
+                <input type="submit" class= "submit" value="How many stitiches should I be knitting?" onclick="divideBy()"> (to keep my right size)<br>
+
+                You should be knitting <span id="result"></span> stitches.
+            </fieldset>
+        </section>    
+
+        </form>
+        <footer class="footer">
+            <div class="footer">
+                <p class="footer__author">&copy; 2021 tHALL3000</p>
+            </div>
+            
+        </footer>
+    </main>
+    
+</body>
+</html>

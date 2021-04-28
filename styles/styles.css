@@ -1,0 +1,154 @@
+.page {
+    display: inline-b;
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(58, 6, 90);
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(38, 171, 204),
+        rgb(60, 31, 128),
+        rgba(60, 31, 128, 0.5)
+    );
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.header {
+    margin: 0;
+    padding: 100px 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(58, 6, 90);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 194, 218);
+}
+.header-title {
+    font-size: 100px;
+    z-index: 1;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 20px;
+    left: 30px;
+    -webkit-filter: invert(1);
+}
+
+.form {
+    margin: 55px auto;
+    margin-bottom: 100px;
+    padding: 50px;
+    z-index: 1;
+    height: auto;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-color: #ff2dff #820585de #8b058d #ff2dff;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 14px 14px 28px #ff44ff, -14px -14px 28px #ff44ff;
+}
+
+.cube {
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    z-index: -3;
+    width: 150px;
+    height: 150px;
+    transition: transform 2s linear;
+}
+.animateSlow {
+    transition: transform 2s linear;
+}
+.animateFast {
+    transition: transform 0.5s linear;
+}
+
+.peekaboo {
+    border-color: rgb(38, 171, 204);
+    transform: translateX(400px);
+}
+
+/* Things I have tried*/
+/*-webkit-animation-name: cubey;*/
+/*transform: translateX(400px);*/
+
+/*@-webkit-keyframes cubey {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    75% {
+        left: 150px;
+    }
+    100% {
+        left: 0px;}
+    }
+}*/
+
+.inputs {
+    width: 50px;
+    margin: 10px;
+}
+
+.inputs:hover {
+    border-color: crimson;
+}
+
+.form__title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 6, 90);
+    font-weight: bold;
+    justify-self: center;
+    size: 90px;
+}
+
+.form__text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 6, 90);
+    font-weight: normal;
+    size: 24px;
+}
+
+.submit {
+    justify-self: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #7609db, #05eafae7);
+    box-shadow: 20px 20px 60px #d2ced2, -20px -20px 60px #ffffff;
+    color: #fff;
+}
+
+.submit:hover {
+    background: linear-gradient(145deg, #000, #fa05d99f);
+}
+.footer {
+    min-height: 100px;
+    background-color: rgb(58, 6, 90);
+    color: white;
+    display: flex;
+}
+.footer__author {
+    .footer__author {
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 18px 0;
+        margin: 0;
+    }
+}
