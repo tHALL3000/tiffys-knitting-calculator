@@ -17,19 +17,18 @@
             <h1 class="header-title">Tiffy's Knitting Calculator</h1>
         </header>
         <section class= "siblings">
-            <div><img class="cube" id= "cubey" src="/images/n955187.jpg" alt="I'm a baaad sheep."></div>
-            <form class="form" id="moveform">
+            <div><img class="cube animateFast" id= "cubey" src="/images/n955187.jpg" alt="I'm a baaaaaad sheep."></div>
+            <form class="form">
             <h2 class="form__title">
                 How many stitches should I be knitting?
             </h2>
 
             <fieldset class="form__gauge onsubmit="return divideBy()" method="post"">
                 The pattern I am knitting calls for <input type="number" class="inputs" id="pattern-gauge-stitiches" name="pattern-gauge-stitiches" value= "0"> stitches over 4 inches.<br>I am knitting at <input type="number" class="inputs" id="my-gauge-stitiches" name="my-gauge-stitiches" value="0"> stiches over my 4 inch swatch.<br>
-                
-                <!--JS for peekaboo-->
-                <input id='matter' type="submit" class="submit animateSlow" onmouseenter="peek('cubey')" onmouseleave="peek('cubey')"
-                value="How much will it matter?" onsubmit="calculate()"><br>
 
+                <input id='matter' type="submit" class="submit animateSlow" onmouseenter="peek('cubey')" onmouseleave="peek('cubey')" value="How much will it matter?" onsubmit="calculate()"><br>
+                <!--<p id="result"></p>-->
+                
                 <script src="script.js"></script>
 
                 <p><b>Your sizing will change 

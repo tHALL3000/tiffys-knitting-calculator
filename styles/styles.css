@@ -17,6 +17,7 @@
     );
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
+    z-index: 0;
 }
 
 .header {
@@ -51,7 +52,7 @@
     margin: 55px auto;
     margin-bottom: 100px;
     padding: 50px;
-    z-index: 1;
+    z-index: 2;
     height: auto;
     width: 40%;
     margin-left: auto;
@@ -70,7 +71,7 @@
     position: absolute;
     left: 50%;
     top: 500px;
-    z-index: -3;
+    z-index: 1;
     width: 150px;
     height: 150px;
     transition: transform 2s linear;

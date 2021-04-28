@@ -1,17 +1,23 @@
+function peek(target) {
+  document.getElementById(target).classList.toggle("peekaboo")
+}
+
+
+
+
+
 /*section for first calculation*/
-function calculate()
+/*function calculate()
 {
     var field1 = document.getElementById("pattern-gauge-stitiches").value;
     var field2 = document.getElementById("my-gauge-stitiches").value;
 
-    var result = parseFloat(field1 / 4) - parseFloat(field2 / 4);
+    var result = parseFloat(field1 / 4) - parseFloat(field2 / 4);*/
 
 
-/*Section for animation*/
+
     
-function peek(target) {
-  document.getElementById(target).classList.toggle("peekaboo")
-}
+
 
 /*Things I have tried*/
     
