@@ -1,3 +1,7 @@
+.custom {
+    cursor: url(/images/pngkit_mouse-pointer-png_55768-small.png), default;
+}
+
 .page {
     display: inline-b;
     min-width: 1100px;
